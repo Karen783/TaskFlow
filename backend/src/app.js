@@ -28,7 +28,7 @@ app.get('/api/tasks', (request, response) => {
     response.json(tasks);
 });
 
-// TODO 9: rutas inexistentes. Debe ir DESPUÉS de todas las rutas válidas.
+// TODO 9: rutas inexistentes
 app.use((request, response) => {
     response.status(404).json({
         status: 404,
